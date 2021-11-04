@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App mongo</title>
+    <script defer src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Montserrat:wght@200&family=Permanent+Marker&family=Poppins:wght@300&family=Qahiri&family=Zen+Kurenaido&family=Zen+Maru+Gothic:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>App Base de Datos </h1>
+    <div class="container">
+  
+           <!--  <label for="nombre">Nombre de Base Datos </label>
+                <input type="text" id="name" ><br>
+                <label for="coleccion">Nombre de la colección</label>
+                <input type="text" id="coleccion" ><br>-->
+            
+            <div class="div_coleccion">  
+                  <p><strong>Mostrar datos</strong></p>  
+                <form action="/mostrar" method="POST"> 
+                    <label for="nombre">Nombre Usuario</label><br>
+                    <input type="text" id="nombre" name="nombre"><br>
+                    
+                    <button type="submit"> Mostrar</button>
+                </div>
+            </form>
+            <div class="div_coleccion2">
+                <p><strong>Actualizar datos</strong></p>  
+                <form action="/actualizar" method="POST"> 
+                    <label for="coleccion">Nombre Usuario</label><br>
+                    <input type="text" id="nombre" ><br>
+                    <label for="coleccion">Teléfono</label><br>
+                    <input type="text" id="telf" ><br>
+                    <label for="coleccion">email</label><br>
+                    <input type="email" id="email" ><br><br>
+                    <button> Actualizar</button>
+                </div>
+            </form>
+          
+                <div class="div_coleccion3">
+                    <p><strong>Borrar datos</strong></p>  
+                    <form action="/borrar" method="POST"> 
+                        <label for="coleccion">Nombre Usuario</label><br>
+                        <input type="text" id="nombre" ><br>
+                        <label for="coleccion">Teléfono</label><br>
+                        <input type="text" id="telf" ><br>
+                        <label for="coleccion">Direccion</label><br>
+                        <input type="text" id="direccion" ><br><br>
+                        <button> Borrar</button>
+                </div>
+            </form>
+            
+                <div class="div_coleccion4">
+                    <p><strong>Insertar datos</strong></p> 
+                    <form action="/insertar" method="POST"> 
+                        <label for="coleccion">Nombre Usuario</label><br>
+                        <input type="text" id="nombre" ><br>
+                        <label for="coleccion">Teléfono</label><br>
+                        <input type="text" id="telf" ><br>
+                        <label for="coleccion">Direccion</label><br>
+                        <input type="text" id="direccion" ><br><br>
+                        <button> Insertar</button>
+                </div>
+            </form>
+            
+  
+    </div>
+
+    <style>
+        
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container{
+            display: flex;
+            justify-content:space-around;
+            border: 1px black solid;
+           
+            
+        }
+        .formulario{
+            align-items: center;
+            margin-top: 10px;
+        }
+        .div_coleccion,.div_coleccion2,.div_coleccion3,.div_coleccion4{
+            margin-left: 30px;
+            margin-top: 10px;
+            padding: 5px;
+            border: 1px black solid;
+        }
+        h1{
+            margin-left: 20px;
+        }
+        
+        
+    </style>
+</body>
+</html>
